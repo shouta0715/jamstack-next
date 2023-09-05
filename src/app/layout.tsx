@@ -11,7 +11,11 @@ export const metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="ja">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="bg-white py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">{children}</div>
+        </div>
+      </body>
     </html>
   );
 };

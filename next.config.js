@@ -8,6 +8,10 @@ const nextConfig = {
   eslint: {
     dirs: ["src"],
   },
+  images: {
+    domains: ["images.microcms-assets.io"],
+  },
+  output: "export",
 };
 
 module.exports = withBundleAnalyzer(nextConfig);
