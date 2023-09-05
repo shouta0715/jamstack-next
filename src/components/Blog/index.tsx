@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { type FC } from "react";
 import type { Blog as TBlog } from "@/libs/cms";
 
@@ -24,10 +25,10 @@ export const Blog: FC<Props> = ({ blog }) => {
         </time>
       </div>
       <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-        <a href={`/blogs/${blog.id}`}>
+        <Link href={`/blogs/${blog.id}`}>
           <span className="absolute inset-0" />
           {blog.title}
-        </a>
+        </Link>
       </h3>
     </article>
   );
