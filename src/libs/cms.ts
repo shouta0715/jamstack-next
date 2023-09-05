@@ -43,8 +43,6 @@ export const getBlogDetail = async (
   contentId: string,
   queries?: MicroCMSQueries
 ) => {
-  console.log("fetching blog detail");
-
   return client.getListDetail<Blog>({
     endpoint: "blogs",
     contentId,

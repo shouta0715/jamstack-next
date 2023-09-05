@@ -7,9 +7,7 @@ export async function generateStaticParams() {
 
   return response.contents.map((content) => {
     return {
-      params: {
-        id: content.id,
-      },
+      id: content.id,
     };
   });
 }
